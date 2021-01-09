@@ -121,4 +121,6 @@ try (MapperSpace mapperSpace = controller.startMapperSpace()) {
 }
 ```
 
+See [tests](src/test) for other simple examples.
+
 See other ECES repositories using this library (e.g., the [tenant manager](https://github.com/AmoVanB/eces-tenant-manager)) for more detailed/advanced examples.

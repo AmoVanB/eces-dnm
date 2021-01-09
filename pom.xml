@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.tum.ei.lkn.eces</groupId>
+        <artifactId>master-pom</artifactId>
+        <version>1.0.21</version>
+    </parent>
+
+    <artifactId>dnm</artifactId>
+    <version>2.0.1</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20150729</version>
+        </dependency>
+        <dependency>
+            <groupId>de.tum.ei.lkn.eces</groupId>
+            <artifactId>routing</artifactId>
+            <version>2.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>de.tum.ei.lkn.eces</groupId>
+            <artifactId>network</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>de.tum.ei.lkn.eces</groupId>
+            <artifactId>discodnc</artifactId>
+            <version>2.4.3-lkn</version>
+        </dependency>
+        <dependency>
+            <groupId>de.tum.ei.lkn.eces</groupId>
+            <artifactId>core</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>de.tum.ei.lkn.eces</groupId>
+            <artifactId>graph</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.erichseifert.gral</groupId>
+            <artifactId>gral-core</artifactId>
+            <version>0.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.javatuples</groupId>
+            <artifactId>javatuples</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.tum.ei.lkn.eces</groupId>
+            <artifactId>topologies</artifactId>
+            <version>2.0.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

@@ -9,11 +9,16 @@ import de.tum.ei.lkn.eces.dnm.resourcemanagement.resourceallocation.SelectResour
 import org.json.JSONObject;
 
 /**
- * Description of the Modeling configuration (network model, resource allocation, etc.) for the DetServ [1] models.
+ * Description of the Modeling configuration (network model, resource allocation, etc.) for the DetServ [1] and
+ * Chameleon [2] models.
  *
  * [1] Guck, Jochen W., Amaury Van Bemten, and Wolfgang Kellerer. "DetServ: Network models for real-time QoS
  * provisioning in SDN-based industrial environments." IEEE Transactions on Network and Service Management 14, no. 4
  * (2017): 1003-1017.
+ * [2] Van Bemten, Amaury, Nemanja Ðerić, Amir Varasteh, Stefan Schmid, Carmen Mas-Machuca, Andreas Blenk, and Wolfgang
+ * Kellerer. "Chameleon: predictable latency and high utilization with queue-aware and adaptive source routing." In
+ * Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies, pp. 451-465.
+ * 2020.
  *
  * @author Jochen Guck
  * @author Amaury Van Bemten

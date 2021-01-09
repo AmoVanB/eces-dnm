@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>dnm</artifactId>
-    <version>2.0.2-SNAPSHOT</version>
+    <version>2.0.3-SNAPSHOT</version>
 
     <description>Library implementing deterministic network models (DNM) for the routing library of the ECES framework</description>
     <url>https://github.com/AmoVanB/eces-dnm</url>

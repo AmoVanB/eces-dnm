@@ -4,7 +4,7 @@ The *deterministic network modeling* (DNM) module implements different network m
 This allows to use the routing module for finding paths with strict delay guarantees in communication networks.
 
 The logic of the models and the implementation rely on *deterministic network calculus* concepts.
-See our [technical report](https://mediatum.ub.tum.de/doc/1328613/file.pdf) about the topic and the [main reference](https://infoscience.epfl.ch/record/282/files/netCalBookv4.pdf) defining and describing network calculus concepts. 
+See our [technical report](https://mediatum.ub.tum.de/doc/1328613/file.pdf) about the topic and the [main reference](https://infoscience.epfl.ch/record/282/files/netCalBookv4.pdf) defining and describing network calculus concepts.
 
 This repository corresponds to the reference implementation for the **Chameleon** and **DetServ** models described in:
 - [Amaury Van Bemten, Nemanja Ðerić, Amir Varasteh, Stefan Schmid, Carmen Mas-Machuca, Andreas Blenk, and Wolfgang Kellerer. "Chameleon: Predictable Latency and High Utilization with Queue-Aware and Adaptive Source Routing." ACM CoNEXT, 2020](https://mediatum.ub.tum.de/doc/1577772/file.pdf), and
@@ -48,7 +48,7 @@ It is based on a configuration assumed to be stored as an instance of the [DetSe
 The configuration object consists of the following elements:
 
  * __Access control model:__ this is either the multi-hop model (MHM) or the threshold-based model (TBM) - see the [DetServ paper](https://mediatum.ub.tum.de/doc/1420159/file.pdf). _Chameleon_ corresponds to the TBM. In a nutshell, the multi-hop model assigns a maximum burst and rate to each queue while the threshold-based model assigns a maximum delay to each queue.
- * __Cost model:__ cost function for a given queue. This can be defined using the classes deriving from [CostModel](src/main/java/de/tum/ei/lkn/eces/dnm/config/costmodels/CostModel.java). For example, 
+ * __Cost model:__ cost function for a given queue. This can be defined using the classes deriving from [CostModel](src/main/java/de/tum/ei/lkn/eces/dnm/config/CostModel.java). For example,
  ```java
  CostModel costFunction = new LowerLimit(new UpperLimit(new Division(new Constant(), new Summation(new Constant(), new QueuePriority())), 1), 0);
  ```
@@ -87,7 +87,7 @@ DetServConfig modelConfig = new DetServConfig(
                 ResidualMode.LEAST_LATENCY,
                 BurstIncreaseModel.NO,
                 false,
-                new Constant(), 
+                new Constant(),
                 (controller, scheduler) -> new TBMSiloDefaultAllocation(controller));
 ```
 
